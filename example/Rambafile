@@ -1,0 +1,23 @@
+### Headers settings
+company: Sberbank
+
+### Xcode project settings
+project_name: example
+xcodeproj_path: example.xcodeproj
+prefix: Aditional
+
+### Code generation settings section
+# The main project target name
+project_target: example
+
+# The file path for new modules
+project_file_path: example/ModuleSecond
+
+# The Xcode group path to new modules
+project_group_path: example/ModuleSecond
+
+### Templates
+templates:
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: swifty_viper}

@@ -1,0 +1,27 @@
+PODS:
+  - RamblerTyphoonUtils/AssemblyCollector (1.5.0)
+  - Typhoon (4.0.5):
+    - Typhoon/DeallocNotifier (= 4.0.5)
+    - Typhoon/IntrospectionUtils (= 4.0.5)
+    - Typhoon/no-arc (= 4.0.5)
+  - Typhoon/DeallocNotifier (4.0.5)
+  - Typhoon/IntrospectionUtils (4.0.5)
+  - Typhoon/no-arc (4.0.5):
+    - Typhoon/IntrospectionUtils
+
+DEPENDENCIES:
+  - RamblerTyphoonUtils/AssemblyCollector
+  - Typhoon
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RamblerTyphoonUtils
+    - Typhoon
+
+SPEC CHECKSUMS:
+  RamblerTyphoonUtils: 08a6b5592e045a490cd4550aa9ea4a581308d482
+  Typhoon: 58ae5754d3d0aa819119d8c107aed0dd67f1eb3b
+
+PODFILE CHECKSUM: 61b37316507b69b82b4bfe4b7f4517c27d546291
+
+COCOAPODS: 1.5.3
