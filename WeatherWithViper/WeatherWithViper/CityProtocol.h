@@ -10,4 +10,7 @@
 
 @protocol CityProtocol <NSObject>
 
+@property (nonatomic, copy) NSString *cityName;
+@property (nonatomic, assign) NSInteger cityId;
+
 @end

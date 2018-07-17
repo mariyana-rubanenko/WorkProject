@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import <Typhoon/Typhoon.h>
+#import <RamblerTyphoonUtils/RamblerInitialAssemblyCollector.h>
+
 @interface AppDelegate ()
 
 @end
@@ -46,6 +49,13 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (NSArray *)initialAssemblies {
+    RamblerInitialAssemblyCollector *collector = [RamblerInitialAssemblyCollector new];
+    return [collector collectInitialAssemblyClasses];
+}
+
+
 
 
 @end

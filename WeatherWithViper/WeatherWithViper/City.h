@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CityProtocol.h"
 
-@interface City : NSObject
+@interface City : NSObject<CityProtocol>
+
+-(instancetype)initWithName:(NSString *)name id:(NSInteger) cityId;
 
 @end

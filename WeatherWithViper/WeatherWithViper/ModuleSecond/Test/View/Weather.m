@@ -10,4 +10,6 @@
 
 @implementation Weather
 
+@synthesize tempWeather = _tempWeather, pressureWeather = _pressureWeather, humidityWeather = _humidityWeather, windSpeedWeather = _windSpeedWeather, timeWeather = _timeWeather, nameImageWeather = _nameImageWeather;
+
 @end

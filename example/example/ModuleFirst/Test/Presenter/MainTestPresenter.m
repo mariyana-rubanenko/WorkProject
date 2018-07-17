@@ -20,7 +20,9 @@
 
 #pragma mark - Методы MainTestModuleInput
 
-
+- (void)configureModule {
+    // Стартовая конфигурация модуля, не привязанная к состоянию view
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return [self.interactor numberOfSectionsInTableView:tableView];

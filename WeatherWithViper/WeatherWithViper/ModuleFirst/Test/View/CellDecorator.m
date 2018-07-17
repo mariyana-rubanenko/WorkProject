@@ -14,7 +14,7 @@
 
 - (void)decorate:(CityTableViewCell *)cell city:(id<CityProtocol>)model {
     cell.nameLabel.text = model.cityName;
-    NSLog(@"%@", cell.nameLabel.text);
+   // NSLog(@"%@", cell);
 }
 
 @end

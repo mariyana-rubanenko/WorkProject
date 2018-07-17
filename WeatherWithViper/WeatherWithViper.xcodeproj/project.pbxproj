@@ -7,68 +7,192 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0227F1E620DA507B0084BF93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F1E520DA507B0084BF93 /* AppDelegate.m */; };
-		0227F1E920DA507B0084BF93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F1E820DA507B0084BF93 /* ViewController.m */; };
-		0227F1EC20DA507B0084BF93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0227F1EA20DA507B0084BF93 /* Main.storyboard */; };
-		0227F1EE20DA507B0084BF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0227F1ED20DA507B0084BF93 /* Assets.xcassets */; };
-		0227F1F120DA507B0084BF93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0227F1EF20DA507B0084BF93 /* LaunchScreen.storyboard */; };
-		0227F1F420DA507B0084BF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F1F320DA507B0084BF93 /* main.m */; };
-		0227F1FE20DA507B0084BF93 /* WeatherWithViperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F1FD20DA507B0084BF93 /* WeatherWithViperTests.m */; };
-		0227F20920DA507B0084BF93 /* WeatherWithViperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F20820DA507B0084BF93 /* WeatherWithViperUITests.m */; };
+		0202A5B620DE450100ED83AC /* SecondStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0202A5B520DE450100ED83AC /* SecondStoryboard.storyboard */; };
+		0202A5BB20DE488C00ED83AC /* WeatherCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0202A5B920DE488C00ED83AC /* WeatherCollectionViewCell.m */; };
+		0202A5BC20DE488C00ED83AC /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0202A5BA20DE488C00ED83AC /* WeatherCollectionViewCell.xib */; };
+		0202A5C020DE645F00ED83AC /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0202A5BF20DE645F00ED83AC /* Manager.m */; };
+		0202A61E20DE92CE00ED83AC /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = 0202A61D20DE92CE00ED83AC /* PodFile */; };
+		0215C0A620E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0215C0A420E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.m */; };
+		0215C0A720E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0215C0A520E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.xib */; };
+		0215C0AA20E1461E003AEAD8 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 0215C0A920E1461E003AEAD8 /* Weather.m */; };
+		0227F22420DA56F80084BF93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F22320DA56F80084BF93 /* AppDelegate.m */; };
+		0227F22720DA56F80084BF93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F22620DA56F80084BF93 /* ViewController.m */; };
+		0227F22A20DA56F80084BF93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0227F22820DA56F80084BF93 /* Main.storyboard */; };
+		0227F22C20DA56F80084BF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0227F22B20DA56F80084BF93 /* Assets.xcassets */; };
+		0227F22F20DA56F80084BF93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0227F22D20DA56F80084BF93 /* LaunchScreen.storyboard */; };
+		0227F23220DA56F80084BF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F23120DA56F80084BF93 /* main.m */; };
+		0227F23C20DA56F80084BF93 /* WeatherWithViperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F23B20DA56F80084BF93 /* WeatherWithViperTests.m */; };
+		0227F24720DA56F80084BF93 /* WeatherWithViperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F24620DA56F80084BF93 /* WeatherWithViperUITests.m */; };
+		0227F25620DA6A400084BF93 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F25520DA6A400084BF93 /* City.m */; };
+		0227F25A20DA6C420084BF93 /* CellDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0227F25920DA6C420084BF93 /* CellDecorator.m */; };
+		0284C6AC20E245F500BD64EC /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 0284C6AB20E245F500BD64EC /* Model.m */; };
+		0284C6B720E28AE900BD64EC /* CityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0284C6B420E28AE900BD64EC /* CityTableViewCell.m */; };
+		0284C6B820E28AE900BD64EC /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0284C6B620E28AE900BD64EC /* CityTableViewCell.xib */; };
+		0610497A7D86B173AF68D777 /* MainTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9011DCABF04FAC1BD3BB86 /* MainTestViewController.m */; };
+		0CBC44FF4F958400BDC6D1A4 /* MainTestPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC05C961B37FF426BB5C4 /* MainTestPresenter.m */; };
+		30E456E6F8D236A5835E85A7 /* AdditionalTestAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C401563844FB4CFAA29027AF /* AdditionalTestAssembly.m */; };
+		32201B67ACB6F5579634FA7D /* MainTestInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BABF1BB32DB31958CE8AC9 /* MainTestInteractor.m */; };
+		577C006F3B818DD100650983 /* Pods_WeatherWithViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5425363BDA278836EC4FE436 /* Pods_WeatherWithViper.framework */; };
+		BFB032636C87B0561143B6DB /* AdditionalTestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75AFAA5A49C647C5E38125 /* AdditionalTestRouter.m */; };
+		CDA9C22CE67177C9F619FE5C /* MainTestRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CE63AEEFC8AA96D2B80A4D /* MainTestRouter.m */; };
+		CFD3AB7A0610A08DA3917CBD /* MainTestAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9A6C5E3C4C35B4D61ACDD6 /* MainTestAssembly.m */; };
+		D3492F84D9792C65152455FD /* AdditionalTestPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5BA18C80A869340FF81C29 /* AdditionalTestPresenter.m */; };
+		D4BE175B5E3E289F4FAF7C73 /* AdditionalTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1063E9592022153629553C01 /* AdditionalTestViewController.m */; };
+		EF6766A6BB4B8245EC236411 /* AdditionalTestInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F5BC5D59D5F8DE3E990632 /* AdditionalTestInteractor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0227F1FA20DA507B0084BF93 /* PBXContainerItemProxy */ = {
+		0202A5FB20DE785D00ED83AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0227F1D920DA507B0084BF93 /* Project object */;
+			containerPortal = 0227F21720DA56F80084BF93 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0227F1E020DA507B0084BF93;
+			remoteGlobalIDString = 0202A5E220DE785D00ED83AC;
+			remoteInfo = Pods;
+		};
+		0202A60620DE785D00ED83AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0227F21720DA56F80084BF93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0202A5E220DE785D00ED83AC;
+			remoteInfo = Pods;
+		};
+		0227F23820DA56F80084BF93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0227F21720DA56F80084BF93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0227F21E20DA56F80084BF93;
 			remoteInfo = WeatherWithViper;
 		};
-		0227F20520DA507B0084BF93 /* PBXContainerItemProxy */ = {
+		0227F24320DA56F80084BF93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0227F1D920DA507B0084BF93 /* Project object */;
+			containerPortal = 0227F21720DA56F80084BF93 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0227F1E020DA507B0084BF93;
+			remoteGlobalIDString = 0227F21E20DA56F80084BF93;
 			remoteInfo = WeatherWithViper;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0227F1E120DA507B0084BF93 /* WeatherWithViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherWithViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0227F1E420DA507B0084BF93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0227F1E520DA507B0084BF93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0227F1E720DA507B0084BF93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0227F1E820DA507B0084BF93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0227F1EB20DA507B0084BF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0227F1ED20DA507B0084BF93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0227F1F020DA507B0084BF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0227F1F220DA507B0084BF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0227F1F320DA507B0084BF93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0227F1F920DA507B0084BF93 /* WeatherWithViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherWithViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0227F1FD20DA507B0084BF93 /* WeatherWithViperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherWithViperTests.m; sourceTree = "<group>"; };
-		0227F1FF20DA507B0084BF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0227F20420DA507B0084BF93 /* WeatherWithViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherWithViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0227F20820DA507B0084BF93 /* WeatherWithViperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherWithViperUITests.m; sourceTree = "<group>"; };
-		0227F20A20DA507B0084BF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0202A5B520DE450100ED83AC /* SecondStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondStoryboard.storyboard; sourceTree = "<group>"; };
+		0202A5B820DE488C00ED83AC /* WeatherCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherCollectionViewCell.h; sourceTree = "<group>"; };
+		0202A5B920DE488C00ED83AC /* WeatherCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherCollectionViewCell.m; sourceTree = "<group>"; };
+		0202A5BA20DE488C00ED83AC /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
+		0202A5BD20DE4FF500ED83AC /* ModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelProtocol.h; sourceTree = "<group>"; };
+		0202A5BE20DE645F00ED83AC /* Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		0202A5BF20DE645F00ED83AC /* Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		0202A5C120DE647100ED83AC /* ManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerProtocol.h; sourceTree = "<group>"; };
+		0202A5E320DE785D00ED83AC /* Pods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pods.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0202A5FA20DE785D00ED83AC /* PodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0202A60520DE785D00ED83AC /* PodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0202A61D20DE92CE00ED83AC /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		0215C0A320E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderWeatherCollectionReusableView.h; sourceTree = "<group>"; };
+		0215C0A420E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderWeatherCollectionReusableView.m; sourceTree = "<group>"; };
+		0215C0A520E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderWeatherCollectionReusableView.xib; sourceTree = "<group>"; };
+		0215C0A820E1461E003AEAD8 /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		0215C0A920E1461E003AEAD8 /* Weather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		0215C0AB20E1465E003AEAD8 /* WeatherProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherProtocol.h; sourceTree = "<group>"; };
+		0227F21F20DA56F80084BF93 /* WeatherWithViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherWithViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0227F22220DA56F80084BF93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0227F22320DA56F80084BF93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0227F22520DA56F80084BF93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0227F22620DA56F80084BF93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0227F22920DA56F80084BF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0227F22B20DA56F80084BF93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0227F22E20DA56F80084BF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0227F23020DA56F80084BF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0227F23120DA56F80084BF93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0227F23720DA56F80084BF93 /* WeatherWithViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherWithViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0227F23B20DA56F80084BF93 /* WeatherWithViperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherWithViperTests.m; sourceTree = "<group>"; };
+		0227F23D20DA56F80084BF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0227F24220DA56F80084BF93 /* WeatherWithViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherWithViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0227F24620DA56F80084BF93 /* WeatherWithViperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherWithViperUITests.m; sourceTree = "<group>"; };
+		0227F24820DA56F80084BF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0227F25420DA6A400084BF93 /* City.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		0227F25520DA6A400084BF93 /* City.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		0227F25720DA6A570084BF93 /* CityProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityProtocol.h; sourceTree = "<group>"; };
+		0227F25820DA6C420084BF93 /* CellDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellDecorator.h; sourceTree = "<group>"; };
+		0227F25920DA6C420084BF93 /* CellDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellDecorator.m; sourceTree = "<group>"; };
+		0227F25B20DA6C7D0084BF93 /* CellDecoratorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellDecoratorProtocol.h; sourceTree = "<group>"; };
+		0284C6AA20E245F500BD64EC /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		0284C6AB20E245F500BD64EC /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		0284C6B420E28AE900BD64EC /* CityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewCell.m; sourceTree = "<group>"; };
+		0284C6B520E28AE900BD64EC /* CityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewCell.h; sourceTree = "<group>"; };
+		0284C6B620E28AE900BD64EC /* CityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		086D96B9FDA951A5F0FA622C /* AdditionalTestInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestInteractor.h; sourceTree = "<group>"; };
+		0FDD635D6DC6C2B8A266963A /* MainTestViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestViewOutput.h; sourceTree = "<group>"; };
+		1063E9592022153629553C01 /* AdditionalTestViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AdditionalTestViewController.m; sourceTree = "<group>"; };
+		1B4BC44FA69850A3A9BDD96D /* AdditionalTestRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestRouterInput.h; sourceTree = "<group>"; };
+		283392EB8AA009C8DE843E08 /* MainTestRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestRouter.h; sourceTree = "<group>"; };
+		3ADAEBB78F23F3BD8230791F /* MainTestInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestInteractor.h; sourceTree = "<group>"; };
+		50F5BC5D59D5F8DE3E990632 /* AdditionalTestInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AdditionalTestInteractor.m; sourceTree = "<group>"; };
+		5425363BDA278836EC4FE436 /* Pods_WeatherWithViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherWithViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		543D92CC7898E247292875BD /* MainTestPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestPresenter.h; sourceTree = "<group>"; };
+		5E217A77335F8759E2E189FA /* MainTestAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestAssembly.h; sourceTree = "<group>"; };
+		6B9F18F7F95452D4ED54DCEE /* Pods-WeatherWithViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherWithViper.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherWithViper/Pods-WeatherWithViper.release.xcconfig"; sourceTree = "<group>"; };
+		79CE63AEEFC8AA96D2B80A4D /* MainTestRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTestRouter.m; sourceTree = "<group>"; };
+		79FFE2E53E826EF4A79621BE /* AdditionalTestModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestModuleInput.h; sourceTree = "<group>"; };
+		7D29486DF0A17169E340A8F8 /* MainTestRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestRouterInput.h; sourceTree = "<group>"; };
+		867680A710BD1E8305F5CE35 /* AdditionalTestViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestViewOutput.h; sourceTree = "<group>"; };
+		8A75AFAA5A49C647C5E38125 /* AdditionalTestRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AdditionalTestRouter.m; sourceTree = "<group>"; };
+		8E5BA18C80A869340FF81C29 /* AdditionalTestPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AdditionalTestPresenter.m; sourceTree = "<group>"; };
+		8F9011DCABF04FAC1BD3BB86 /* MainTestViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTestViewController.m; sourceTree = "<group>"; };
+		950EED9AA87DAFD759C54E87 /* AdditionalTestAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestAssembly.h; sourceTree = "<group>"; };
+		98ADDF3309AE8909C5BB1160 /* Pods-WeatherWithViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherWithViper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherWithViper/Pods-WeatherWithViper.debug.xcconfig"; sourceTree = "<group>"; };
+		9DFD3C65B8C2087444922E3C /* AdditionalTestRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestRouter.h; sourceTree = "<group>"; };
+		9E9A13F0E257578EB444CAB0 /* AdditionalTestInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestInteractorInput.h; sourceTree = "<group>"; };
+		9F9A6C5E3C4C35B4D61ACDD6 /* MainTestAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTestAssembly.m; sourceTree = "<group>"; };
+		AB3BE2D3A83CE5A57B6B66BD /* MainTestInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestInteractorOutput.h; sourceTree = "<group>"; };
+		AD719B16AA4F85B74EAF5572 /* MainTestViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestViewInput.h; sourceTree = "<group>"; };
+		B05C48E318D819688774DC2C /* AdditionalTestPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestPresenter.h; sourceTree = "<group>"; };
+		C11520B6F2167A352425FBE8 /* AdditionalTestInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestInteractorOutput.h; sourceTree = "<group>"; };
+		C401563844FB4CFAA29027AF /* AdditionalTestAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AdditionalTestAssembly.m; sourceTree = "<group>"; };
+		CD9125385A591A5A7C82A1CB /* AdditionalTestViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestViewController.h; sourceTree = "<group>"; };
+		CF851A9762C676AA5D90D821 /* MainTestModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestModuleInput.h; sourceTree = "<group>"; };
+		CFB1D7B728952E2B8486FE8F /* MainTestInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestInteractorInput.h; sourceTree = "<group>"; };
+		DD8DC05C961B37FF426BB5C4 /* MainTestPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTestPresenter.m; sourceTree = "<group>"; };
+		ED39BEDC721C643582DADC64 /* MainTestViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestViewController.h; sourceTree = "<group>"; };
+		F2BABF1BB32DB31958CE8AC9 /* MainTestInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MainTestInteractor.m; sourceTree = "<group>"; };
+		F81B52F4A1354D7DE6CF1EBA /* AdditionalTestViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestViewInput.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0227F1DE20DA507B0084BF93 /* Frameworks */ = {
+		0202A5E020DE785D00ED83AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0227F1F620DA507B0084BF93 /* Frameworks */ = {
+		0202A5F720DE785D00ED83AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0227F20120DA507B0084BF93 /* Frameworks */ = {
+		0202A60220DE785D00ED83AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0227F21C20DA56F80084BF93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577C006F3B818DD100650983 /* Pods_WeatherWithViper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0227F23420DA56F80084BF93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0227F23F20DA56F80084BF93 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,70 +202,325 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0227F1D820DA507B0084BF93 = {
+		0202A5B720DE452E00ED83AC /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				0227F1E320DA507B0084BF93 /* WeatherWithViper */,
-				0227F1FC20DA507B0084BF93 /* WeatherWithViperTests */,
-				0227F20720DA507B0084BF93 /* WeatherWithViperUITests */,
-				0227F1E220DA507B0084BF93 /* Products */,
+				0202A5B520DE450100ED83AC /* SecondStoryboard.storyboard */,
+				0202A5B820DE488C00ED83AC /* WeatherCollectionViewCell.h */,
+				0202A5B920DE488C00ED83AC /* WeatherCollectionViewCell.m */,
+				0202A5BA20DE488C00ED83AC /* WeatherCollectionViewCell.xib */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0227F21620DA56F80084BF93 = {
+			isa = PBXGroup;
+			children = (
+				0202A61D20DE92CE00ED83AC /* PodFile */,
+				0227F22120DA56F80084BF93 /* WeatherWithViper */,
+				0227F23A20DA56F80084BF93 /* WeatherWithViperTests */,
+				0227F24520DA56F80084BF93 /* WeatherWithViperUITests */,
+				0227F22020DA56F80084BF93 /* Products */,
+				76BDF8E5EF6D42A8946D0E44 /* Frameworks */,
+				7DA0C79B6447817328F2B79B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
-		0227F1E220DA507B0084BF93 /* Products */ = {
+		0227F22020DA56F80084BF93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0227F1E120DA507B0084BF93 /* WeatherWithViper.app */,
-				0227F1F920DA507B0084BF93 /* WeatherWithViperTests.xctest */,
-				0227F20420DA507B0084BF93 /* WeatherWithViperUITests.xctest */,
+				0227F21F20DA56F80084BF93 /* WeatherWithViper.app */,
+				0227F23720DA56F80084BF93 /* WeatherWithViperTests.xctest */,
+				0227F24220DA56F80084BF93 /* WeatherWithViperUITests.xctest */,
+				0202A5E320DE785D00ED83AC /* Pods.app */,
+				0202A5FA20DE785D00ED83AC /* PodsTests.xctest */,
+				0202A60520DE785D00ED83AC /* PodsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0227F1E320DA507B0084BF93 /* WeatherWithViper */ = {
+		0227F22120DA56F80084BF93 /* WeatherWithViper */ = {
 			isa = PBXGroup;
 			children = (
-				0227F1E420DA507B0084BF93 /* AppDelegate.h */,
-				0227F1E520DA507B0084BF93 /* AppDelegate.m */,
-				0227F1E720DA507B0084BF93 /* ViewController.h */,
-				0227F1E820DA507B0084BF93 /* ViewController.m */,
-				0227F1EA20DA507B0084BF93 /* Main.storyboard */,
-				0227F1ED20DA507B0084BF93 /* Assets.xcassets */,
-				0227F1EF20DA507B0084BF93 /* LaunchScreen.storyboard */,
-				0227F1F220DA507B0084BF93 /* Info.plist */,
-				0227F1F320DA507B0084BF93 /* main.m */,
+				0227F22220DA56F80084BF93 /* AppDelegate.h */,
+				0227F22320DA56F80084BF93 /* AppDelegate.m */,
+				0227F22520DA56F80084BF93 /* ViewController.h */,
+				0227F22620DA56F80084BF93 /* ViewController.m */,
+				0227F22820DA56F80084BF93 /* Main.storyboard */,
+				0227F22B20DA56F80084BF93 /* Assets.xcassets */,
+				0227F22D20DA56F80084BF93 /* LaunchScreen.storyboard */,
+				0227F23020DA56F80084BF93 /* Info.plist */,
+				0227F23120DA56F80084BF93 /* main.m */,
+				0227F25720DA6A570084BF93 /* CityProtocol.h */,
+				0227F25420DA6A400084BF93 /* City.h */,
+				0227F25520DA6A400084BF93 /* City.m */,
+				0202A5BD20DE4FF500ED83AC /* ModelProtocol.h */,
+				07C0A837C725C71CBD950160 /* ModuleFirst */,
+				15BE55F3384423AD5F888D60 /* ModuleSecond */,
 			);
 			path = WeatherWithViper;
 			sourceTree = "<group>";
 		};
-		0227F1FC20DA507B0084BF93 /* WeatherWithViperTests */ = {
+		0227F23A20DA56F80084BF93 /* WeatherWithViperTests */ = {
 			isa = PBXGroup;
 			children = (
-				0227F1FD20DA507B0084BF93 /* WeatherWithViperTests.m */,
-				0227F1FF20DA507B0084BF93 /* Info.plist */,
+				0227F23B20DA56F80084BF93 /* WeatherWithViperTests.m */,
+				0227F23D20DA56F80084BF93 /* Info.plist */,
 			);
 			path = WeatherWithViperTests;
 			sourceTree = "<group>";
 		};
-		0227F20720DA507B0084BF93 /* WeatherWithViperUITests */ = {
+		0227F24520DA56F80084BF93 /* WeatherWithViperUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0227F20820DA507B0084BF93 /* WeatherWithViperUITests.m */,
-				0227F20A20DA507B0084BF93 /* Info.plist */,
+				0227F24620DA56F80084BF93 /* WeatherWithViperUITests.m */,
+				0227F24820DA56F80084BF93 /* Info.plist */,
 			);
 			path = WeatherWithViperUITests;
+			sourceTree = "<group>";
+		};
+		07C0A837C725C71CBD950160 /* ModuleFirst */ = {
+			isa = PBXGroup;
+			children = (
+				6892F78518049FFC634A7D9E /* Test */,
+			);
+			path = ModuleFirst;
+			sourceTree = "<group>";
+		};
+		15BE55F3384423AD5F888D60 /* ModuleSecond */ = {
+			isa = PBXGroup;
+			children = (
+				7331849860465FA7BFBA8DB7 /* Test */,
+			);
+			path = ModuleSecond;
+			sourceTree = "<group>";
+		};
+		318A4C9CBD2597F79B2283CD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9E9A13F0E257578EB444CAB0 /* AdditionalTestInteractorInput.h */,
+				C11520B6F2167A352425FBE8 /* AdditionalTestInteractorOutput.h */,
+				086D96B9FDA951A5F0FA622C /* AdditionalTestInteractor.h */,
+				50F5BC5D59D5F8DE3E990632 /* AdditionalTestInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		32F527C53F705F7EF461C4C0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7D29486DF0A17169E340A8F8 /* MainTestRouterInput.h */,
+				283392EB8AA009C8DE843E08 /* MainTestRouter.h */,
+				79CE63AEEFC8AA96D2B80A4D /* MainTestRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3E9225087985EB06BDE79369 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CFB1D7B728952E2B8486FE8F /* MainTestInteractorInput.h */,
+				3ADAEBB78F23F3BD8230791F /* MainTestInteractor.h */,
+				AB3BE2D3A83CE5A57B6B66BD /* MainTestInteractorOutput.h */,
+				F2BABF1BB32DB31958CE8AC9 /* MainTestInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6892F78518049FFC634A7D9E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				8E4BF3465049247BCA70E986 /* Assembly */,
+				923E3800F78349CCD986B827 /* View */,
+				D1AAC83A313383509705F18F /* Presenter */,
+				3E9225087985EB06BDE79369 /* Interactor */,
+				32F527C53F705F7EF461C4C0 /* Router */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		7331849860465FA7BFBA8DB7 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				0284C6AA20E245F500BD64EC /* Model.h */,
+				0284C6AB20E245F500BD64EC /* Model.m */,
+				0202A5B720DE452E00ED83AC /* Storyboard */,
+				93D8BCDFADA316B2A3B20389 /* Assembly */,
+				882CA16EB1304B3FD13C595A /* View */,
+				B4DC064ADC4DE29D0BF3C387 /* Presenter */,
+				318A4C9CBD2597F79B2283CD /* Interactor */,
+				A1FE7D4967DB4BFAFB4FC636 /* Router */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		76BDF8E5EF6D42A8946D0E44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5425363BDA278836EC4FE436 /* Pods_WeatherWithViper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DA0C79B6447817328F2B79B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98ADDF3309AE8909C5BB1160 /* Pods-WeatherWithViper.debug.xcconfig */,
+				6B9F18F7F95452D4ED54DCEE /* Pods-WeatherWithViper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		882CA16EB1304B3FD13C595A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0215C0AB20E1465E003AEAD8 /* WeatherProtocol.h */,
+				0215C0A820E1461E003AEAD8 /* Weather.h */,
+				0215C0A920E1461E003AEAD8 /* Weather.m */,
+				0215C0A320E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.h */,
+				0215C0A420E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.m */,
+				0215C0A520E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.xib */,
+				F81B52F4A1354D7DE6CF1EBA /* AdditionalTestViewInput.h */,
+				867680A710BD1E8305F5CE35 /* AdditionalTestViewOutput.h */,
+				CD9125385A591A5A7C82A1CB /* AdditionalTestViewController.h */,
+				1063E9592022153629553C01 /* AdditionalTestViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E4BF3465049247BCA70E986 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				5E217A77335F8759E2E189FA /* MainTestAssembly.h */,
+				9F9A6C5E3C4C35B4D61ACDD6 /* MainTestAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		923E3800F78349CCD986B827 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0202A5BE20DE645F00ED83AC /* Manager.h */,
+				0202A5BF20DE645F00ED83AC /* Manager.m */,
+				0202A5C120DE647100ED83AC /* ManagerProtocol.h */,
+				0227F25B20DA6C7D0084BF93 /* CellDecoratorProtocol.h */,
+				0227F25820DA6C420084BF93 /* CellDecorator.h */,
+				0227F25920DA6C420084BF93 /* CellDecorator.m */,
+				0284C6B520E28AE900BD64EC /* CityTableViewCell.h */,
+				0284C6B420E28AE900BD64EC /* CityTableViewCell.m */,
+				0284C6B620E28AE900BD64EC /* CityTableViewCell.xib */,
+				AD719B16AA4F85B74EAF5572 /* MainTestViewInput.h */,
+				0FDD635D6DC6C2B8A266963A /* MainTestViewOutput.h */,
+				ED39BEDC721C643582DADC64 /* MainTestViewController.h */,
+				8F9011DCABF04FAC1BD3BB86 /* MainTestViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93D8BCDFADA316B2A3B20389 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				950EED9AA87DAFD759C54E87 /* AdditionalTestAssembly.h */,
+				C401563844FB4CFAA29027AF /* AdditionalTestAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		A1FE7D4967DB4BFAFB4FC636 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1B4BC44FA69850A3A9BDD96D /* AdditionalTestRouterInput.h */,
+				9DFD3C65B8C2087444922E3C /* AdditionalTestRouter.h */,
+				8A75AFAA5A49C647C5E38125 /* AdditionalTestRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B4DC064ADC4DE29D0BF3C387 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				79FFE2E53E826EF4A79621BE /* AdditionalTestModuleInput.h */,
+				B05C48E318D819688774DC2C /* AdditionalTestPresenter.h */,
+				8E5BA18C80A869340FF81C29 /* AdditionalTestPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D1AAC83A313383509705F18F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CF851A9762C676AA5D90D821 /* MainTestModuleInput.h */,
+				543D92CC7898E247292875BD /* MainTestPresenter.h */,
+				DD8DC05C961B37FF426BB5C4 /* MainTestPresenter.m */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0227F1E020DA507B0084BF93 /* WeatherWithViper */ = {
+		0202A5E220DE785D00ED83AC /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0227F20D20DA507B0084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViper" */;
+			buildConfigurationList = 0202A60C20DE785D00ED83AC /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				0227F1DD20DA507B0084BF93 /* Sources */,
-				0227F1DE20DA507B0084BF93 /* Frameworks */,
-				0227F1DF20DA507B0084BF93 /* Resources */,
+				0202A5DF20DE785D00ED83AC /* Sources */,
+				0202A5E020DE785D00ED83AC /* Frameworks */,
+				0202A5E120DE785D00ED83AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 0202A5E320DE785D00ED83AC /* Pods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0202A5F920DE785D00ED83AC /* PodsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0202A60F20DE785D00ED83AC /* Build configuration list for PBXNativeTarget "PodsTests" */;
+			buildPhases = (
+				0202A5F620DE785D00ED83AC /* Sources */,
+				0202A5F720DE785D00ED83AC /* Frameworks */,
+				0202A5F820DE785D00ED83AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0202A5FC20DE785D00ED83AC /* PBXTargetDependency */,
+			);
+			name = PodsTests;
+			productName = PodsTests;
+			productReference = 0202A5FA20DE785D00ED83AC /* PodsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0202A60420DE785D00ED83AC /* PodsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0202A61220DE785D00ED83AC /* Build configuration list for PBXNativeTarget "PodsUITests" */;
+			buildPhases = (
+				0202A60120DE785D00ED83AC /* Sources */,
+				0202A60220DE785D00ED83AC /* Frameworks */,
+				0202A60320DE785D00ED83AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0202A60720DE785D00ED83AC /* PBXTargetDependency */,
+			);
+			name = PodsUITests;
+			productName = PodsUITests;
+			productReference = 0202A60520DE785D00ED83AC /* PodsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0227F21E20DA56F80084BF93 /* WeatherWithViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0227F24B20DA56F80084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViper" */;
+			buildPhases = (
+				2EBFEA10A911654B44CC90AF /* [CP] Check Pods Manifest.lock */,
+				0227F21B20DA56F80084BF93 /* Sources */,
+				0227F21C20DA56F80084BF93 /* Frameworks */,
+				0227F21D20DA56F80084BF93 /* Resources */,
+				61653A3CBE61487DC81357D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,71 +528,85 @@
 			);
 			name = WeatherWithViper;
 			productName = WeatherWithViper;
-			productReference = 0227F1E120DA507B0084BF93 /* WeatherWithViper.app */;
+			productReference = 0227F21F20DA56F80084BF93 /* WeatherWithViper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0227F1F820DA507B0084BF93 /* WeatherWithViperTests */ = {
+		0227F23620DA56F80084BF93 /* WeatherWithViperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0227F21020DA507B0084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViperTests" */;
+			buildConfigurationList = 0227F24E20DA56F80084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViperTests" */;
 			buildPhases = (
-				0227F1F520DA507B0084BF93 /* Sources */,
-				0227F1F620DA507B0084BF93 /* Frameworks */,
-				0227F1F720DA507B0084BF93 /* Resources */,
+				0227F23320DA56F80084BF93 /* Sources */,
+				0227F23420DA56F80084BF93 /* Frameworks */,
+				0227F23520DA56F80084BF93 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0227F1FB20DA507B0084BF93 /* PBXTargetDependency */,
+				0227F23920DA56F80084BF93 /* PBXTargetDependency */,
 			);
 			name = WeatherWithViperTests;
 			productName = WeatherWithViperTests;
-			productReference = 0227F1F920DA507B0084BF93 /* WeatherWithViperTests.xctest */;
+			productReference = 0227F23720DA56F80084BF93 /* WeatherWithViperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0227F20320DA507B0084BF93 /* WeatherWithViperUITests */ = {
+		0227F24120DA56F80084BF93 /* WeatherWithViperUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0227F21320DA507B0084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViperUITests" */;
+			buildConfigurationList = 0227F25120DA56F80084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViperUITests" */;
 			buildPhases = (
-				0227F20020DA507B0084BF93 /* Sources */,
-				0227F20120DA507B0084BF93 /* Frameworks */,
-				0227F20220DA507B0084BF93 /* Resources */,
+				0227F23E20DA56F80084BF93 /* Sources */,
+				0227F23F20DA56F80084BF93 /* Frameworks */,
+				0227F24020DA56F80084BF93 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0227F20620DA507B0084BF93 /* PBXTargetDependency */,
+				0227F24420DA56F80084BF93 /* PBXTargetDependency */,
 			);
 			name = WeatherWithViperUITests;
 			productName = WeatherWithViperUITests;
-			productReference = 0227F20420DA507B0084BF93 /* WeatherWithViperUITests.xctest */;
+			productReference = 0227F24220DA56F80084BF93 /* WeatherWithViperUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0227F1D920DA507B0084BF93 /* Project object */ = {
+		0227F21720DA56F80084BF93 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = rnov;
 				TargetAttributes = {
-					0227F1E020DA507B0084BF93 = {
+					0202A5E220DE785D00ED83AC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					0227F1F820DA507B0084BF93 = {
+					0202A5F920DE785D00ED83AC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 0227F1E020DA507B0084BF93;
+						TestTargetID = 0202A5E220DE785D00ED83AC;
 					};
-					0227F20320DA507B0084BF93 = {
+					0202A60420DE785D00ED83AC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 0227F1E020DA507B0084BF93;
+						TestTargetID = 0202A5E220DE785D00ED83AC;
+					};
+					0227F21E20DA56F80084BF93 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					0227F23620DA56F80084BF93 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0227F21E20DA56F80084BF93;
+					};
+					0227F24120DA56F80084BF93 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0227F21E20DA56F80084BF93;
 					};
 				};
 			};
-			buildConfigurationList = 0227F1DC20DA507B0084BF93 /* Build configuration list for PBXProject "WeatherWithViper" */;
+			buildConfigurationList = 0227F21A20DA56F80084BF93 /* Build configuration list for PBXProject "WeatherWithViper" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,37 +614,66 @@
 				en,
 				Base,
 			);
-			mainGroup = 0227F1D820DA507B0084BF93;
-			productRefGroup = 0227F1E220DA507B0084BF93 /* Products */;
+			mainGroup = 0227F21620DA56F80084BF93;
+			productRefGroup = 0227F22020DA56F80084BF93 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0227F1E020DA507B0084BF93 /* WeatherWithViper */,
-				0227F1F820DA507B0084BF93 /* WeatherWithViperTests */,
-				0227F20320DA507B0084BF93 /* WeatherWithViperUITests */,
+				0227F21E20DA56F80084BF93 /* WeatherWithViper */,
+				0227F23620DA56F80084BF93 /* WeatherWithViperTests */,
+				0227F24120DA56F80084BF93 /* WeatherWithViperUITests */,
+				0202A5E220DE785D00ED83AC /* Pods */,
+				0202A5F920DE785D00ED83AC /* PodsTests */,
+				0202A60420DE785D00ED83AC /* PodsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0227F1DF20DA507B0084BF93 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0227F1F120DA507B0084BF93 /* LaunchScreen.storyboard in Resources */,
-				0227F1EE20DA507B0084BF93 /* Assets.xcassets in Resources */,
-				0227F1EC20DA507B0084BF93 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0227F1F720DA507B0084BF93 /* Resources */ = {
+		0202A5E120DE785D00ED83AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0227F20220DA507B0084BF93 /* Resources */ = {
+		0202A5F820DE785D00ED83AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0202A60320DE785D00ED83AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0227F21D20DA56F80084BF93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0227F22F20DA56F80084BF93 /* LaunchScreen.storyboard in Resources */,
+				0227F22C20DA56F80084BF93 /* Assets.xcassets in Resources */,
+				0284C6B820E28AE900BD64EC /* CityTableViewCell.xib in Resources */,
+				0202A5B620DE450100ED83AC /* SecondStoryboard.storyboard in Resources */,
+				0215C0A720E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.xib in Resources */,
+				0202A61E20DE92CE00ED83AC /* PodFile in Resources */,
+				0227F22A20DA56F80084BF93 /* Main.storyboard in Resources */,
+				0202A5BC20DE488C00ED83AC /* WeatherCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0227F23520DA56F80084BF93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0227F24020DA56F80084BF93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,61 +682,151 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EBFEA10A911654B44CC90AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeatherWithViper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61653A3CBE61487DC81357D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeatherWithViper/Pods-WeatherWithViper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RamblerTyphoonUtils/RamblerTyphoonUtils.framework",
+				"${BUILT_PRODUCTS_DIR}/Typhoon/Typhoon.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RamblerTyphoonUtils.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Typhoon.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeatherWithViper/Pods-WeatherWithViper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		0227F1DD20DA507B0084BF93 /* Sources */ = {
+		0202A5DF20DE785D00ED83AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0227F1E920DA507B0084BF93 /* ViewController.m in Sources */,
-				0227F1F420DA507B0084BF93 /* main.m in Sources */,
-				0227F1E620DA507B0084BF93 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0227F1F520DA507B0084BF93 /* Sources */ = {
+		0202A5F620DE785D00ED83AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0227F1FE20DA507B0084BF93 /* WeatherWithViperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0227F20020DA507B0084BF93 /* Sources */ = {
+		0202A60120DE785D00ED83AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0227F20920DA507B0084BF93 /* WeatherWithViperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0227F21B20DA56F80084BF93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0227F22720DA56F80084BF93 /* ViewController.m in Sources */,
+				0202A5BB20DE488C00ED83AC /* WeatherCollectionViewCell.m in Sources */,
+				0227F25A20DA6C420084BF93 /* CellDecorator.m in Sources */,
+				0227F23220DA56F80084BF93 /* main.m in Sources */,
+				0215C0AA20E1461E003AEAD8 /* Weather.m in Sources */,
+				0227F22420DA56F80084BF93 /* AppDelegate.m in Sources */,
+				CFD3AB7A0610A08DA3917CBD /* MainTestAssembly.m in Sources */,
+				0610497A7D86B173AF68D777 /* MainTestViewController.m in Sources */,
+				0202A5C020DE645F00ED83AC /* Manager.m in Sources */,
+				0CBC44FF4F958400BDC6D1A4 /* MainTestPresenter.m in Sources */,
+				32201B67ACB6F5579634FA7D /* MainTestInteractor.m in Sources */,
+				0215C0A620E13E21003AEAD8 /* HeaderWeatherCollectionReusableView.m in Sources */,
+				CDA9C22CE67177C9F619FE5C /* MainTestRouter.m in Sources */,
+				0284C6B720E28AE900BD64EC /* CityTableViewCell.m in Sources */,
+				30E456E6F8D236A5835E85A7 /* AdditionalTestAssembly.m in Sources */,
+				D4BE175B5E3E289F4FAF7C73 /* AdditionalTestViewController.m in Sources */,
+				D3492F84D9792C65152455FD /* AdditionalTestPresenter.m in Sources */,
+				EF6766A6BB4B8245EC236411 /* AdditionalTestInteractor.m in Sources */,
+				0284C6AC20E245F500BD64EC /* Model.m in Sources */,
+				0227F25620DA6A400084BF93 /* City.m in Sources */,
+				BFB032636C87B0561143B6DB /* AdditionalTestRouter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0227F23320DA56F80084BF93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0227F23C20DA56F80084BF93 /* WeatherWithViperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0227F23E20DA56F80084BF93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0227F24720DA56F80084BF93 /* WeatherWithViperUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0227F1FB20DA507B0084BF93 /* PBXTargetDependency */ = {
+		0202A5FC20DE785D00ED83AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0227F1E020DA507B0084BF93 /* WeatherWithViper */;
-			targetProxy = 0227F1FA20DA507B0084BF93 /* PBXContainerItemProxy */;
+			target = 0202A5E220DE785D00ED83AC /* Pods */;
+			targetProxy = 0202A5FB20DE785D00ED83AC /* PBXContainerItemProxy */;
 		};
-		0227F20620DA507B0084BF93 /* PBXTargetDependency */ = {
+		0202A60720DE785D00ED83AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0227F1E020DA507B0084BF93 /* WeatherWithViper */;
-			targetProxy = 0227F20520DA507B0084BF93 /* PBXContainerItemProxy */;
+			target = 0202A5E220DE785D00ED83AC /* Pods */;
+			targetProxy = 0202A60620DE785D00ED83AC /* PBXContainerItemProxy */;
+		};
+		0227F23920DA56F80084BF93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0227F21E20DA56F80084BF93 /* WeatherWithViper */;
+			targetProxy = 0227F23820DA56F80084BF93 /* PBXContainerItemProxy */;
+		};
+		0227F24420DA56F80084BF93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0227F21E20DA56F80084BF93 /* WeatherWithViper */;
+			targetProxy = 0227F24320DA56F80084BF93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0227F1EA20DA507B0084BF93 /* Main.storyboard */ = {
+		0227F22820DA56F80084BF93 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0227F1EB20DA507B0084BF93 /* Base */,
+				0227F22920DA56F80084BF93 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0227F1EF20DA507B0084BF93 /* LaunchScreen.storyboard */ = {
+		0227F22D20DA56F80084BF93 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0227F1F020DA507B0084BF93 /* Base */,
+				0227F22E20DA56F80084BF93 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -322,7 +834,87 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0227F20B20DA507B0084BF93 /* Debug */ = {
+		0202A60D20DE785D00ED83AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pods/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sbt.Pods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0202A60E20DE785D00ED83AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Pods/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sbt.Pods;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0202A61020DE785D00ED83AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PodsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sbt.PodsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pods.app/Pods";
+			};
+			name = Debug;
+		};
+		0202A61120DE785D00ED83AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PodsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sbt.PodsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pods.app/Pods";
+			};
+			name = Release;
+		};
+		0202A61320DE785D00ED83AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PodsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sbt.PodsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pods;
+			};
+			name = Debug;
+		};
+		0202A61420DE785D00ED83AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PodsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sbt.PodsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pods;
+			};
+			name = Release;
+		};
+		0227F24920DA56F80084BF93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -377,7 +969,7 @@
 			};
 			name = Debug;
 		};
-		0227F20C20DA507B0084BF93 /* Release */ = {
+		0227F24A20DA56F80084BF93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -426,8 +1018,9 @@
 			};
 			name = Release;
 		};
-		0227F20E20DA507B0084BF93 /* Debug */ = {
+		0227F24C20DA56F80084BF93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98ADDF3309AE8909C5BB1160 /* Pods-WeatherWithViper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,8 +1032,9 @@
 			};
 			name = Debug;
 		};
-		0227F20F20DA507B0084BF93 /* Release */ = {
+		0227F24D20DA56F80084BF93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9F18F7F95452D4ED54DCEE /* Pods-WeatherWithViper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,7 +1046,7 @@
 			};
 			name = Release;
 		};
-		0227F21120DA507B0084BF93 /* Debug */ = {
+		0227F24F20DA56F80084BF93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,7 +1060,7 @@
 			};
 			name = Debug;
 		};
-		0227F21220DA507B0084BF93 /* Release */ = {
+		0227F25020DA56F80084BF93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,7 +1074,7 @@
 			};
 			name = Release;
 		};
-		0227F21420DA507B0084BF93 /* Debug */ = {
+		0227F25220DA56F80084BF93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -493,7 +1087,7 @@
 			};
 			name = Debug;
 		};
-		0227F21520DA507B0084BF93 /* Release */ = {
+		0227F25320DA56F80084BF93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -509,43 +1103,70 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0227F1DC20DA507B0084BF93 /* Build configuration list for PBXProject "WeatherWithViper" */ = {
+		0202A60C20DE785D00ED83AC /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0227F20B20DA507B0084BF93 /* Debug */,
-				0227F20C20DA507B0084BF93 /* Release */,
+				0202A60D20DE785D00ED83AC /* Debug */,
+				0202A60E20DE785D00ED83AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0227F20D20DA507B0084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViper" */ = {
+		0202A60F20DE785D00ED83AC /* Build configuration list for PBXNativeTarget "PodsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0227F20E20DA507B0084BF93 /* Debug */,
-				0227F20F20DA507B0084BF93 /* Release */,
+				0202A61020DE785D00ED83AC /* Debug */,
+				0202A61120DE785D00ED83AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0227F21020DA507B0084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViperTests" */ = {
+		0202A61220DE785D00ED83AC /* Build configuration list for PBXNativeTarget "PodsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0227F21120DA507B0084BF93 /* Debug */,
-				0227F21220DA507B0084BF93 /* Release */,
+				0202A61320DE785D00ED83AC /* Debug */,
+				0202A61420DE785D00ED83AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0227F21320DA507B0084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViperUITests" */ = {
+		0227F21A20DA56F80084BF93 /* Build configuration list for PBXProject "WeatherWithViper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0227F21420DA507B0084BF93 /* Debug */,
-				0227F21520DA507B0084BF93 /* Release */,
+				0227F24920DA56F80084BF93 /* Debug */,
+				0227F24A20DA56F80084BF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0227F24B20DA56F80084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0227F24C20DA56F80084BF93 /* Debug */,
+				0227F24D20DA56F80084BF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0227F24E20DA56F80084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0227F24F20DA56F80084BF93 /* Debug */,
+				0227F25020DA56F80084BF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0227F25120DA56F80084BF93 /* Build configuration list for PBXNativeTarget "WeatherWithViperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0227F25220DA56F80084BF93 /* Debug */,
+				0227F25320DA56F80084BF93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0227F1D920DA507B0084BF93 /* Project object */;
+	rootObject = 0227F21720DA56F80084BF93 /* Project object */;
 }

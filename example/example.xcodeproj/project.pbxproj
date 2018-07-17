@@ -173,6 +173,7 @@
 		0226893120BEE3D9003107A6 = {
 			isa = PBXGroup;
 			children = (
+				0226894B20BEE3D9003107A6 /* Info.plist */,
 				0226893C20BEE3D9003107A6 /* example */,
 				0226895520BEE3DA003107A6 /* exampleTests */,
 				0226896020BEE3DA003107A6 /* exampleUITests */,
@@ -200,7 +201,6 @@
 				0226894320BEE3D9003107A6 /* Main.storyboard */,
 				0226894620BEE3D9003107A6 /* Assets.xcassets */,
 				0226894820BEE3D9003107A6 /* LaunchScreen.storyboard */,
-				0226894B20BEE3D9003107A6 /* Info.plist */,
 				0226894C20BEE3D9003107A6 /* main.m */,
 				021F2C8420C7E75E00E6A324 /* NewsProtocol.h */,
 				021F2C8520C7E85300E6A324 /* News.h */,

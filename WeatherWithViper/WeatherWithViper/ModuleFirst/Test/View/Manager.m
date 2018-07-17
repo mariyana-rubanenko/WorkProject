@@ -29,7 +29,6 @@
     City *city4 = [[City alloc] initWithName:@"Volgograd" id:472757];
     City *city5 = [[City alloc] initWithName:@"Sochi" id:491422];
     [self.citiesList addObjectsFromArray:@[city1, city2, city3, city4, city5]];
-    NSLog(@"%@", self.citiesList);
 }
 
 @end

@@ -58,6 +58,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MainTestTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MainTestTableViewCell class])];
+
     id<NewsProtocol> model = [self.output getModelWithIndexPath:indexPath];
     [self.cellDecorator decorate:cell news:model];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

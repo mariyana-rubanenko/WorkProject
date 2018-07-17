@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CityProtocol.h"
 
 @protocol ModelProtocol <NSObject>
+
+- (void) updateModel:(id<CityProtocol>) model;
+- (id<CityProtocol>)getModel;
 
 @end

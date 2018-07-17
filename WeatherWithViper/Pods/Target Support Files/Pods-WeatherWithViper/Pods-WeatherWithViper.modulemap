@@ -1,0 +1,6 @@
+framework module Pods_WeatherWithViper {
+  umbrella header "Pods-WeatherWithViper-umbrella.h"
+
+  export *
+  module * { export * }
+}

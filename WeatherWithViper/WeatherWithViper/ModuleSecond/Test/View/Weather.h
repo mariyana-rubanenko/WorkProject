@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WeatherProtocol.h"
 
-@interface Weather : NSObject
+@interface Weather : NSObject<WeatherProtocol>
 
 @end
