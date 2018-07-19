@@ -28,7 +28,6 @@ typedef void(^NetworkFetcherCompletionHandler)(NSMutableArray *data, NSError *er
 
 - (void)didTriggerViewReadyEvent {
 	[self.view setupInitialState];
-    //[self updateWeather];
     [self.interactor updateWeatherCompletionBlock:^(NSMutableArray *objects, NSError *error) {
         [self.view reloadData];
     }];
@@ -42,12 +41,12 @@ typedef void(^NetworkFetcherCompletionHandler)(NSMutableArray *data, NSError *er
     return [self.interactor getModel];
 }
 
--(NSMutableArray *)getWeatherMainArray:(id<CityProtocol>) model {
-    return [self.interactor getWeatherMainArray:model];
+-(NSMutableArray *)getWeatherMainArray {
+    return [self.interactor getWeatherMainArray];
 }
 
--(NSMutableArray *)getWeatherData:(id <CityProtocol>) model {
-    return [self.interactor getWeatherData:model];
+-(NSMutableArray *)getWeatherData {
+    return [self.interactor getWeatherData];
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -57,5 +56,20 @@ typedef void(^NetworkFetcherCompletionHandler)(NSMutableArray *data, NSError *er
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [self.interactor collectionView:collectionView numberOfItemsInSection:section];
 }
+
+- (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    return nil;
+}
+
+
+-(Weather *)getModelOfWeatherWithIndexPath:(NSIndexPath *)indexPath {
+    return [self.interactor getModelOfWeatherWithIndexPath:indexPath];
+}
+
+- (void)requestFromServerWeatherData:(id<CityProtocol>)model {
+    [self.interactor requestFromServerWeatherData:model];
+}
+
+
 
 @end

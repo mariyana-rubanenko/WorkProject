@@ -12,6 +12,7 @@
 #import "AdditionalTestInteractor.h"
 #import "AdditionalTestPresenter.h"
 #import "AdditionalTestRouter.h"
+#import "CellDecoratorSecond.h"
 
 //#import <ViperMcFlurry/ViperMcFlurry.h>
 
@@ -25,6 +26,8 @@
                                                     with:[self presenterTest]];
 //                              [definition injectProperty:@selector(moduleInput)
 //                                                    with:[self presenterTest]];
+                              [definition injectProperty:@selector(cellDecoratorInSecondVC)
+                                                    with:[self cellDecoratorInSecondVC]];
                           }];
 }
 
@@ -54,6 +57,10 @@
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewTest]];
                           }];
+}
+
+-(id) cellDecoratorInSecondVC {
+    return [TyphoonDefinition withClass:[CellDecoratorSecond class]];
 }
 
 @end

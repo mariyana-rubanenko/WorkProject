@@ -28,6 +28,7 @@
 		0284C6AC20E245F500BD64EC /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 0284C6AB20E245F500BD64EC /* Model.m */; };
 		0284C6B720E28AE900BD64EC /* CityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0284C6B420E28AE900BD64EC /* CityTableViewCell.m */; };
 		0284C6B820E28AE900BD64EC /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0284C6B620E28AE900BD64EC /* CityTableViewCell.xib */; };
+		0292E0B820FDFB5600087AA4 /* CellDecoratorSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 0292E0B720FDFB5600087AA4 /* CellDecoratorSecond.m */; };
 		0610497A7D86B173AF68D777 /* MainTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9011DCABF04FAC1BD3BB86 /* MainTestViewController.m */; };
 		0CBC44FF4F958400BDC6D1A4 /* MainTestPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC05C961B37FF426BB5C4 /* MainTestPresenter.m */; };
 		30E456E6F8D236A5835E85A7 /* AdditionalTestAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C401563844FB4CFAA29027AF /* AdditionalTestAssembly.m */; };
@@ -118,6 +119,9 @@
 		0284C6B420E28AE900BD64EC /* CityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewCell.m; sourceTree = "<group>"; };
 		0284C6B520E28AE900BD64EC /* CityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewCell.h; sourceTree = "<group>"; };
 		0284C6B620E28AE900BD64EC /* CityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		0292E0B620FDFB5600087AA4 /* CellDecoratorSecond.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellDecoratorSecond.h; sourceTree = "<group>"; };
+		0292E0B720FDFB5600087AA4 /* CellDecoratorSecond.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellDecoratorSecond.m; sourceTree = "<group>"; };
+		0292E0B920FDFB7A00087AA4 /* CellDecoratorSecondProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellDecoratorSecondProtocol.h; sourceTree = "<group>"; };
 		086D96B9FDA951A5F0FA622C /* AdditionalTestInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdditionalTestInteractor.h; sourceTree = "<group>"; };
 		0FDD635D6DC6C2B8A266963A /* MainTestViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MainTestViewOutput.h; sourceTree = "<group>"; };
 		1063E9592022153629553C01 /* AdditionalTestViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = AdditionalTestViewController.m; sourceTree = "<group>"; };
@@ -374,6 +378,9 @@
 		882CA16EB1304B3FD13C595A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0292E0B620FDFB5600087AA4 /* CellDecoratorSecond.h */,
+				0292E0B720FDFB5600087AA4 /* CellDecoratorSecond.m */,
+				0292E0B920FDFB7A00087AA4 /* CellDecoratorSecondProtocol.h */,
 				0215C0AB20E1465E003AEAD8 /* WeatherProtocol.h */,
 				0215C0A820E1461E003AEAD8 /* Weather.h */,
 				0215C0A920E1461E003AEAD8 /* Weather.m */,
@@ -750,6 +757,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0227F22720DA56F80084BF93 /* ViewController.m in Sources */,
+				0292E0B820FDFB5600087AA4 /* CellDecoratorSecond.m in Sources */,
 				0202A5BB20DE488C00ED83AC /* WeatherCollectionViewCell.m in Sources */,
 				0227F25A20DA6C420084BF93 /* CellDecorator.m in Sources */,
 				0227F23220DA56F80084BF93 /* main.m in Sources */,

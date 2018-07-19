@@ -27,25 +27,31 @@
     return self.model;
 }
 
--(NSMutableArray *)getWeatherData:(id <CityProtocol>) model{
+-(Weather *)getModelOfWeatherWithIndexPath:(NSIndexPath *)indexPath {
+    return self.data[indexPath.row];
+}
+
+-(NSMutableArray *)getWeatherData{
     return self.data;
 }
 
--(NSMutableArray *)getWeatherMainArray:(id<CityProtocol>) model{
-    NSMutableArray *arrayNew = [self getWeatherData:model];
+-(NSMutableArray *)getWeatherMainArray{
+    NSMutableArray *arrayNew = [self getWeatherData];
     [self prepareDataOfWeather:arrayNew];
     return self.mainArray;
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    id<CityProtocol> modelNew = [self getModel];
-    return [self getWeatherMainArray:modelNew].count;
+    return [self getWeatherMainArray].count;
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    id<CityProtocol> modelNew = [self getModel];
-    Model *modelObject = [self getWeatherMainArray:modelNew][section];
+    Model *modelObject = [self getWeatherMainArray][section];
     return [modelObject.values count];
+}
+
+- (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    return nil;
 }
 
 -(void) requestFromServerWeatherData : (id <CityProtocol>)model {

@@ -48,6 +48,7 @@
     CityTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([CityTableViewCell class])];
     id<CityProtocol> model = [self.output getModelWithIndexPath:indexPath];
     [self.cellDecorator decorate:cell city:model];
+    
 
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;

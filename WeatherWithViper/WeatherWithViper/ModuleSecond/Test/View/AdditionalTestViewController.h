@@ -10,6 +10,7 @@
 
 #import "AdditionalTestViewInput.h"
 #import "CityProtocol.h"
+#import "CellDecoratorSecondProtocol.h"
 
 //typedef void(^NetworkFetcherCompletionHandler)(NSData *data, NSError *error);
 
@@ -20,5 +21,7 @@
 @property (nonatomic, strong) id<AdditionalTestViewOutput> output;
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) id<CityProtocol> model;
+@property (nonatomic, strong) id<CellDecoratorSecondProtocol> cellDecoratorInSecondVC;
+
 
 @end

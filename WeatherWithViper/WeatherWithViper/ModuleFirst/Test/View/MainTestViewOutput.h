@@ -17,7 +17,7 @@
 
  Метод сообщает презентеру о том, что view готова к работе
  */
--(void)initDataOfCities;
+//-(void)initDataOfCities;
 - (void)didTriggerViewReadyEvent;
 - (id<CityProtocol>)getModelWithIndexPath:(NSIndexPath *)indexPath;
 

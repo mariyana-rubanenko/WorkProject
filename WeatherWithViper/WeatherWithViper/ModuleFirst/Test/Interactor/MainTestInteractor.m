@@ -27,6 +27,9 @@
     return [self.manager citiesList].count;
 }
 
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    return nil;
+}
 
 -(NSMutableArray *) getCities {
     return [self.manager citiesList];

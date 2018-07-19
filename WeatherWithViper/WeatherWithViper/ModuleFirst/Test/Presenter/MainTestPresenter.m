@@ -18,6 +18,7 @@
 
 @implementation MainTestPresenter
 
+
 #pragma mark - Методы MainTestModuleInput
 
 - (void)configureModule {
@@ -38,16 +39,22 @@
     return [self.interactor numberOfSectionsInTableView:tableView];
 }
 
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    return nil;
+}
+
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSMutableArray *newArrayOfCities = [self.interactor getCities];
     id<CityProtocol> model = newArrayOfCities[indexPath.row];
     [self.router showModuleFirstFromModuleSecond:self.view withModel:model];
 }
- 
+
 
 - (id<CityProtocol>)getModelWithIndexPath:(NSIndexPath *)indexPath {
     return [self.interactor getCities][indexPath.row];
 }
+
 
 #pragma mark - Методы MainTestInteractorOutput
 

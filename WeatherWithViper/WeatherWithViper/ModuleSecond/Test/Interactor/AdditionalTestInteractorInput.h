@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "UIKit/UIKit.h"
 #import "CityProtocol.h"
+#import "Weather.h"
 
 //typedef void(^NetworkFetcherCompletionHandler)(UICollectionView * viewFromVC);
 typedef void(^NetworkFetcherCompletionHandler)(NSMutableArray *objects, NSError *error);
@@ -16,9 +17,9 @@ typedef void(^NetworkFetcherCompletionHandler)(NSMutableArray *objects, NSError 
 @protocol AdditionalTestInteractorInput <NSObject, UICollectionViewDelegate, UICollectionViewDataSource, NSURLSessionTaskDelegate, NSURLSessionDataDelegate, NSURLSessionDelegate>
 
 
-
--(NSMutableArray *)getWeatherMainArray:(id<CityProtocol>) model;
--(NSMutableArray *)getWeatherData:(id <CityProtocol>) model;
+-(Weather *)getModelOfWeatherWithIndexPath:(NSIndexPath *)indexPath;
+-(NSMutableArray *)getWeatherMainArray;
+-(NSMutableArray *)getWeatherData;
 
 -(id<CityProtocol>) getModel;
 -(void) updateModel:(id<CityProtocol>)modelFromFirstController;

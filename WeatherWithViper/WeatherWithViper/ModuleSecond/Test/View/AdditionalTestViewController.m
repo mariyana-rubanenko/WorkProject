@@ -16,7 +16,7 @@
 
 @implementation AdditionalTestViewController
 
-@synthesize model = _model;
+@synthesize model = _model, cellDecoratorInSecondVC = _cellDecoratorInSecondVC;
 
 #pragma mark - Методы жизненного цикла
 
@@ -45,12 +45,12 @@
     return [self.output getModel];
 }
 
--(NSMutableArray *)getWeatherData:(id <CityProtocol>) model{
-    return [self.output getWeatherData:model];
+-(NSMutableArray *)getWeatherData{
+    return [self.output getWeatherData];
 }
 
--(NSMutableArray *)getWeatherMainArray:(id<CityProtocol>) model {
-    return [self.output getWeatherMainArray:model];
+-(NSMutableArray *)getWeatherMainArray {
+    return [self.output getWeatherMainArray];
 }
 
 -(void) requestFromServerWeatherData:(id <CityProtocol>)model {
@@ -74,23 +74,9 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     WeatherCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([WeatherCollectionViewCell class]) forIndexPath:indexPath];
-    id<CityProtocol> cityModel = [self getModel];
-    Weather *weather = [self getWeatherData:cityModel][indexPath.row];
-    cell.timeLabel.text = [weather.timeWeather substringFromIndex:11];
-    cell.tempLabel.text = [weather.tempWeather stringValue];
-    cell.pressureLabel.text = [weather.pressureWeather stringValue];
-    cell.humidityLabel.text = [weather.humidityWeather stringValue];
-    cell.windSpeedLabel.text = [weather.windSpeedWeather stringValue];
+    Weather *weather = [self.output getModelOfWeatherWithIndexPath:indexPath];
+    [self.cellDecoratorInSecondVC decorateCellInSecondVC:cell modelOfWeather:weather];
     
-    if ([weather.nameImageWeather isEqualToString: @"Rain"]) {
-        cell.imageView.image = [UIImage imageNamed:@"rain.png"];
-    } else if ([weather.nameImageWeather isEqualToString: @"Clouds"]) {
-        cell.imageView.image = [UIImage imageNamed:@"cloud.png"];
-    } else {
-        cell.imageView.image = [UIImage imageNamed:@"sunny.png"];
-    }
-    
-    //cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 
@@ -99,9 +85,9 @@
     UICollectionReusableView *reusableView = nil;
     if (kind == UICollectionElementKindSectionHeader) {
         HeaderWeatherCollectionReusableView *headerView = [self.collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([HeaderWeatherCollectionReusableView class]) forIndexPath:indexPath];
-        id<CityProtocol> lastModel = [self getModel];
-        Model *modelObject = [self.output getWeatherMainArray:lastModel][indexPath.section];
         
+        Model *modelObject = [self.output getWeatherMainArray][indexPath.section];
+
         NSString *title = [[NSString alloc]initWithFormat:@"%@", modelObject.title];
         headerView.sectionHeaderLabel.text = title;
         reusableView = headerView;

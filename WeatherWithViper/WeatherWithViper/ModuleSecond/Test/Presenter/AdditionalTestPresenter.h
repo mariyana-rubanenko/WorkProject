@@ -11,6 +11,7 @@
 #import "AdditionalTestModuleInput.h"
 #import "UIKit/UIKit.h"
 #import "ModelProtocol.h"
+#import "Weather.h"
 
 @protocol AdditionalTestViewInput;
 @protocol AdditionalTestInteractorInput;
