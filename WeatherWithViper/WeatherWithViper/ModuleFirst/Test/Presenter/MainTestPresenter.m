@@ -40,21 +40,19 @@
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    return nil;
+    return [self.interactor tableView:tableView cellForRowAtIndexPath:indexPath];
 }
-
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSMutableArray *newArrayOfCities = [self.interactor getCities];
     id<CityProtocol> model = newArrayOfCities[indexPath.row];
-    [self.router showModuleFirstFromModuleSecond:self.view withModel:model];
+    [self.router showModuleFirstFromModuleSecond:(UIViewController*)self.view withModel:model];
+    
 }
-
 
 - (id<CityProtocol>)getModelWithIndexPath:(NSIndexPath *)indexPath {
     return [self.interactor getCities][indexPath.row];
 }
-
 
 #pragma mark - Методы MainTestInteractorOutput
 

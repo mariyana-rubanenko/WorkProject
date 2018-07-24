@@ -21,6 +21,7 @@
     UIViewController<ModelProtocol> *secondViewController = [storyboard instantiateInitialViewController];
     [secondViewController updateModel:model];
     [view.navigationController pushViewController:secondViewController animated:YES];
+    
 }
 
 

@@ -24,6 +24,13 @@
 	[super viewDidLoad];
     [self registerCells];
 	[self.output didTriggerViewReadyEvent];
+//    self.title = @"Города";
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.title = @"Города";
 }
 
 #pragma mark - Методы MainTestViewInput
@@ -48,8 +55,7 @@
     CityTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([CityTableViewCell class])];
     id<CityProtocol> model = [self.output getModelWithIndexPath:indexPath];
     [self.cellDecorator decorate:cell city:model];
-    
-
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }

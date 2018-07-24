@@ -25,6 +25,13 @@
     [self registerCells];
     
 	[self.output didTriggerViewReadyEvent];
+    
+    NSString *titleFirstPartString = @"Погода в ";
+    self.title = [titleFirstPartString stringByAppendingString:[NSString stringWithFormat:@"%@", [self getModel].cityName]];
+    
+    NSArray *viewControllers = self.navigationController.viewControllers;
+    UIViewController *prevController = [viewControllers objectAtIndex:viewControllers.count - 2];
+    prevController.title = @"Города";
 }
 
 #pragma mark - Методы AdditionalTestViewInput
@@ -76,7 +83,6 @@
     WeatherCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([WeatherCollectionViewCell class]) forIndexPath:indexPath];
     Weather *weather = [self.output getModelOfWeatherWithIndexPath:indexPath];
     [self.cellDecoratorInSecondVC decorateCellInSecondVC:cell modelOfWeather:weather];
-    
     return cell;
 }
 

@@ -79,10 +79,10 @@
         for (NSDictionary *dict in weatherList) {
             Weather *weather = [[Weather alloc] init];
             weather.timeWeather = [dict valueForKeyPath:@"dt_txt"];
-            weather.tempWeather = [dict valueForKeyPath:@"main.temp"];
-            weather.pressureWeather = [dict valueForKeyPath:@"main.pressure"];
-            weather.humidityWeather = [dict valueForKeyPath:@"main.humidity"];
-            weather.windSpeedWeather = [dict valueForKeyPath:@"wind.speed"];
+            weather.tempWeather = [[dict valueForKeyPath:@"main.temp"] doubleValue];
+            weather.pressureWeather = [[dict valueForKeyPath:@"main.pressure"] doubleValue];
+            weather.humidityWeather = [[dict valueForKeyPath:@"main.humidity"] doubleValue];
+            weather.windSpeedWeather = [[dict valueForKeyPath:@"wind.speed"]doubleValue];
             NSArray *weatherListNameImage = [dict valueForKey:@"weather"];
             NSDictionary *dictWeatherListNameImage = [weatherListNameImage objectAtIndex:0];
             weather.nameImageWeather = [dictWeatherListNameImage valueForKey:@"main"];

@@ -11,10 +11,10 @@
 @protocol WeatherProtocol <NSObject>
 
 @required
-@property (nonatomic, strong) NSNumber *tempWeather;
-@property (nonatomic, strong) NSNumber *pressureWeather;
-@property (nonatomic, strong) NSNumber *humidityWeather;
-@property (nonatomic, strong) NSNumber *windSpeedWeather;
+@property (nonatomic) double tempWeather;
+@property (nonatomic) double pressureWeather;
+@property (nonatomic) double humidityWeather;
+@property (nonatomic) double windSpeedWeather;
 @property (nonatomic, strong) NSString *timeWeather;
 @property (nonatomic, strong) NSString *nameImageWeather;
 
